@@ -1,0 +1,28 @@
+.right-nav {
+  background: #171e2e;
+  color: rgba(#fff, 0.6);
+
+  .column {
+    align-items: center;
+    margin: 1rem 0;
+    &.item:hover {
+      color: #fff;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .first {
+    margin-top: 0.3rem;
+  }
+  .item {
+    cursor: pointer;
+
+    &:not(:nth-last-of-type(1)) {
+      margin-bottom: 2rem;
+    }
+  }
+}
