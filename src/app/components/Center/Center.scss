@@ -1,3 +1,37 @@
 .center {
-  background: linear-gradient(rgba(#d9faf8, 1), rgba(#adaeaf, 1));
+  background: rgb(213, 213, 213);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 213, 213, 1) 38%,
+    rgba(105, 122, 236, 1) 38%,
+    rgba(#5e72e4, 1) 100%
+  );
+  .container {
+    overflow-y: scroll;
+    height: 100vh;
+    width: 95%;
+    height: 100%;
+    padding: 10rem 0 0 0;
+    gap: 1rem;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .item {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: max-content;
+    box-shadow: 2px 1px 4px 1px rgba(#000, 0.3);
+  }
+  h2 {
+    padding: 10px;
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+  }
 }

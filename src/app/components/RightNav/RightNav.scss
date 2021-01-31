@@ -1,12 +1,12 @@
 .right-nav {
-  background: #171e2e;
-  color: rgba(#fff, 0.6);
+  background: #fff;
+  color: rgba(#000, 0.6);
 
   .column {
     align-items: center;
     margin: 1rem 0;
     &.item:hover {
-      color: #fff;
+      color: #000;
     }
     p {
       font-size: 0.7rem;
@@ -17,6 +17,7 @@
   }
   .first {
     margin-top: 0.3rem;
+    color: #5e72e4;
   }
   .item {
     cursor: pointer;

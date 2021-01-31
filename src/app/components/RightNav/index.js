@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import { HiOutlineSwitchVertical } from "react-icons/hi";
 import { BsLightningFill } from "react-icons/bs";
-import { FaUserPlus } from "react-icons/fa";
+import { ImUserPlus } from "react-icons/im";
 
 import "./RightNav.scss";
 
@@ -16,15 +16,15 @@ function index() {
           <p></p>
         </div>
         <div className="column item">
-          <HiOutlineSwitchVertical className="icon" />
+          <HiOutlineSwitchVertical style={{ color: "red" }} className="icon" />
           <p>Deals</p>
         </div>
         <div className="column item">
-          <BsLightningFill className="icon" />
+          <BsLightningFill style={{ color: "gold" }} className="icon" />
           <p>Trends</p>
         </div>
         <div className="column item">
-          <FaUserPlus className="icon" />
+          <ImUserPlus style={{ color: "purple" }} className="icon" />
           <p>Social</p>
         </div>
       </div>
