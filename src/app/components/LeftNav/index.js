@@ -5,57 +5,62 @@ import { GrLineChart } from "react-icons/gr";
 import { FaGraduationCap, FaCog, FaMoneyBillAlt } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import "./LeftNav.scss";
+import { Link } from "react-router-dom";
 
 function index() {
   return (
     <div className="left-nav">
       <div className="container links column">
         <div className="column logo">
-          <h1>LOGO</h1>
+          <h1>
+            <Link to="/">
+              <h1>LOGO</h1>
+            </Link>
+          </h1>
         </div>
         <div className="links upper column">
-          <a href="#">
+          <Link to="/trade">
             <span className="link-content">
               <GrLineChart className="icon" style={{ color: "#fe72e4" }} />
               <p>Trade</p>{" "}
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/finances">
             <span className="link-content">
               <FaMoneyBillAlt className="icon" style={{ color: "#5e72e4" }} />
               <p>Finances</p>{" "}
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="profile">
             <span className="link-content">
               <BsPersonFill className="icon" style={{ color: "#fb6340" }} />
               <p>Profile</p>{" "}
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="apps">
             <span className="link-content">
               <AiFillAppstore className="icon" style={{ color: "#f5365c" }} />
               <p>Apps</p>{" "}
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="analytics">
             <span className="link-content">
               <BsPieChartFill className="icon" style={{ color: "#ffd600" }} />
               <p>Analytics</p>{" "}
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/education">
             <span className="link-content">
               <FaGraduationCap className="icon" style={{ color: "#11cdef" }} />
               <p>Education</p>{" "}
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="help">
             <span className="link-content">
               <AiFillInfoCircle className="icon" style={{ color: "#f3a4b5" }} />
               <p>Help</p>{" "}
             </span>
-          </a>
+          </Link>
         </div>
 
         <div className="divider"></div>

@@ -129,6 +129,9 @@ a {
     margin-top: 1rem;
   }
 }
+.shadow {
+  box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.12);
+}
 
 .grid-container {
   display: grid;
