@@ -1,0 +1,117 @@
+.info-section {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0 19rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  display: grid;
+  color: #555;
+  line-height: 3;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  & > div {
+    background: #f5fafd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: auto;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-1.1px);
+    }
+  }
+  p {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    h3 {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  }
+
+  .support {
+    align-items: center;
+    .image {
+      height: 70px;
+      // justify-content: center;
+      align-items: center;
+      width: 70px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0 0 1.5rem 0;
+      svg {
+        padding: 0.5rem;
+        height: 7rem;
+        width: 7rem;
+        fill: rgb(206, 4, 58);
+      }
+    }
+    button {
+      padding: 0.2rem 3rem;
+      background: rgb(206, 4, 58);
+      color: #fff;
+      margin: 1.5rem 0 0 0;
+      font-weight: bold;
+    }
+  }
+  .contact-english,
+  .contact-hindi {
+    .flex {
+      justify-content: flex-start;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 1.5rem;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px #5e72e4;
+    }
+  }
+  .shadow.contact-hindi {
+    height: fit-content;
+    img {
+      box-shadow: 0 0 0 3px #27b327;
+    }
+  }
+
+  .question-input {
+    button {
+      padding: 0.2rem 3rem;
+      margin: 1rem 0;
+      background: rgb(206, 4, 58);
+      color: #fff;
+      font-weight: bold;
+    }
+    textarea.input {
+      line-height: 2.2;
+      resize: none;
+    }
+    .input {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 0.3px solid rgba(#ddd, 0.5);
+      line-height: 1;
+      &:active,
+      &:focus {
+        border: 0.3px solid rgba(206, 4, 58, 0.5);
+        outline: 0.3px solid rgba(206, 4, 58, 0);
+      }
+    }
+    textarea.input {
+      height: 8rem;
+      line-height: 1.5;
+      resize: none;
+    }
+  }
+  &::after {
+    content: "";
+    height: 120%;
+    width: 100%;
+  }
+}

@@ -39,7 +39,7 @@ function index() {
           </Link>
           <Link to="apps">
             <span className="link-content">
-              <AiFillAppstore className="icon" style={{ color: "#f5365c" }} />
+              <AiFillAppstore className="icon" style={{ color: "magenta" }} />
               <p>Apps</p>{" "}
             </span>
           </Link>
@@ -55,9 +55,9 @@ function index() {
               <p>Education</p>{" "}
             </span>
           </Link>
-          <Link to="help">
+          <Link to="/info">
             <span className="link-content">
-              <AiFillInfoCircle className="icon" style={{ color: "#f3a4b5" }} />
+              <AiFillInfoCircle className="icon" style={{ color: "#ce043a" }} />
               <p>Help</p>{" "}
             </span>
           </Link>

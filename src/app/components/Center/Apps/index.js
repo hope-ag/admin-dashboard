@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Apps.scss";
 const Apps = () => {
   return (
     <div className="apps">

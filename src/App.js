@@ -10,7 +10,6 @@ import Education from "./app/components/Center/Education";
 import Finances from "./app/components/Center/Finances";
 import Help from "./app/components/Center/Help";
 import Profile from "./app/components/Center/Profile";
-import Trade from "./app/components/Center/Trade";
 
 // import { Counter } from "./state/counter/Counter";
 import "./App.scss";
@@ -25,13 +24,13 @@ function App(props) {
         <TopNav />
         <Switch>
           <Route exact path="/" component={MainSection}></Route>
-          <Route path="/apps" component={Apps}></Route>
-          <Route path="/analytics" component={Analythcs}></Route>
-          <Route path="/education" component={Education}></Route>
-          <Route path="/finances" component={Finances}></Route>
-          <Route path="/help" component={Help}></Route>
-          <Route path="/profile" component={Profile}></Route>
-          <Route path="/trade" component={MainSection}></Route>
+          <Route exact path="/apps" component={Apps}></Route>
+          <Route exact path="/analytics" component={Analythcs}></Route>
+          <Route exact path="/education" component={Education}></Route>
+          <Route exact path="/finances" component={Finances}></Route>
+          <Route path="/info" component={Help}></Route>
+          <Route exact path="/profile" component={Profile}></Route>
+          <Route exact path="/trade" component={MainSection}></Route>
           <Route path="/">
             <div className="column">
               <h1>404</h1>

@@ -20,7 +20,7 @@ function Center() {
 }
 function TestItems() {
   return (
-    <div className="item shadow column">
+    <div className="items shadow column">
       <h2>
         <Link to="/trade">Placeholder</Link>
       </h2>
@@ -35,4 +35,5 @@ function TestItems() {
     </div>
   );
 }
+
 export default Center;

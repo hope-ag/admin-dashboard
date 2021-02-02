@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Trade.scss";
 const Trade = () => {
   return (
     <div className="trade">

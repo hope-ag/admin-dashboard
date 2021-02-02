@@ -32,6 +32,7 @@
   }
   .items {
     padding: 0.6rem;
+    padding-left: 0;
     height: 100%;
     // border-right: 0.6px solid rgba(#fff, 0.3);
     & a {
@@ -80,9 +81,9 @@
       }
     }
   }
-  .container {
-    width: 95%;
-  }
+  // .container {
+  //   width: 95%;
+  // }
   .deposit-btn {
     background-color: #fff;
     color: #5e72e4;
